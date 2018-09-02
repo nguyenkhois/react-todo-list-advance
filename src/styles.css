@@ -1,0 +1,65 @@
+body{font-family: Arial, Helvetica, sans-serif;}
+ul{list-style-type: none;}
+button{
+    margin-left: 5px;
+    background-color: white;
+    color: black;
+    border: 1px solid #555555;
+    border-radius: 10px;    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;    
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+button:hover{background-color: #555555;color: white;}
+
+#root{width: 26em;}
+#root input[type="text"]{
+    /* Clear the user's operating system's theme */
+    -webkit-appearance: none;
+    -moz-rootearance: none;
+
+    /* Apply own styles */
+    transition: all 0.30s ease-in-out;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1em;
+
+    width: 95%;
+    height: 2em;
+    padding-left: 10px;
+}
+#root input[type="text"]:focus{border: 1px solid #0094ff;box-shadow: 0 0 5px #0094ff;}
+#root input[type="checkbox"]{width: 1.3em;height: 1.3em;position: relative;}
+#root > div{padding: 15px;margin:0;position: relative;user-select: none;-moz-user-select: none;-ms-user-select: none;-webkit-user-select: none;background: #f8f8f8;border: thin solid #cbcbcb;border-radius: 5px;}
+
+#root > div > div:nth-child(2) > p:first-child {font-size: 2em;font-weight: bold;text-align: center;}
+#root > div > div:nth-child(2) > div > p:first-child {font-size: 1.1em;font-weight: bold;}
+
+#root > div > input {padding-left: 0.5em;padding-right: 0.5em;}
+#root > div > div {word-wrap: break-word;}
+#root > div > div > div > ul > li span {text-decoration: line-through;color: #999999;}
+
+
+a {text-decoration: none; color: #0080db;}
+a:hover {color: #0094ff; text-decoration: none;}
+
+.top-menu-left {width: 100%;}
+.top-menu-right {width: 100%; text-align: right;}
+
+.deleted-tasks ul{list-style-type: initial;}
+.deleted-tasks li {color: #555555;text-decoration: line-through; color: #999999}
+
+.button-big {padding: 0.5em; border-radius: 20px;}
+
+.lists {word-wrap: break-word;}
+
+.footer {font-size: 0.7em;margin-top: 25px;}
+.footer a {color: #555555; text-decoration: none;}
+.footer a:hover{color: #0094ff; text-decoration: none;}
